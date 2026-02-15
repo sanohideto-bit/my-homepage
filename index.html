@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEALTH ARCHI | 建設業特化型DX・自立型組織構築支援</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- React & ReactDOM -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-    <!-- Babel (for JSX) -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
     <style>
@@ -539,8 +536,13 @@
                                     <div className="relative group">
                                         <div className="absolute -inset-1 bg-gradient-to-tr from-yellow-400 to-blue-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                         <div className="bg-gray-800 aspect-[3/4] w-64 rounded-xl shadow-2xl flex items-center justify-center relative overflow-hidden ring-1 ring-gray-700">
-                                            <HardHat className="w-32 h-32 text-gray-600 group-hover:scale-110 transition duration-500" />
-                                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6 pt-12">
+                                            {/* 画像表示に変更 */}
+                                            <img 
+                                                src="./hideto.jpg" 
+                                                alt="代表 佐野英人" 
+                                                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500" 
+                                            />
+                                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6 pt-12 z-10">
                                                 <p className="text-yellow-400 font-bold text-sm tracking-wider mb-1">FOUNDER</p>
                                                 <p className="text-2xl font-bold">代表 佐野英人</p>
                                                 <p className="text-white text-sm mt-1">一級建築士</p>
